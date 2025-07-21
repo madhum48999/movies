@@ -1,5 +1,5 @@
 """
-URL configuration for movies project.
+URL configuration for projectname project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -16,14 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from movies import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('movies/', views.movies),
-    path('', views.home),
-    path('movies/<int:id>', views.detail ),
-    path('movies/add', views.add),
-    path('movies/delete/<int:id>', views.delete)
-
 ]
